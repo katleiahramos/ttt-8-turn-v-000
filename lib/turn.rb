@@ -22,7 +22,7 @@ end
 def valid_move?(board,index)
  if position_taken?(board,index)
    return false
-  elsif index > 9 || index < 0
+ elsif index >= 10 || index < 0
    return false
  else
    return true
